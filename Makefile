@@ -1,6 +1,6 @@
 all: $(patsubst %.c,bin/%,$(wildcard *.c))
 
-CFLAGS += -Wall -g -O0 -D_BSD_SOURCE -std=c99 -lm
+CFLAGS += -Wall -g -O0 -D_DEFAULT_SOURCE -std=c99 -lm
 
 bin/prog3: map.h
 

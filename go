@@ -53,7 +53,7 @@ test -e ${inf} || ./fetch_input "${which_day}" > "${inf}"
 
 test -e "${c_file}" || {
 
-cp -v "${template_file}" "${c_file}"
+cp -iv "${template_file}" "${c_file}"
 }
 
 vim -c "TrunCommand ${binfile} < ${inf}" -O "${c_file}" "${inf}"
